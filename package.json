@@ -1,7 +1,6 @@
 {
     "devDependencies": {
         "@nomicfoundation/hardhat-toolbox": "^1.0.1",
-        "@nomiclabs/hardhat-solhint": "^2.0.1",
         "@typescript-eslint/eslint-plugin": "^5.33.0",
         "@typescript-eslint/parser": "^5.33.0",
         "eslint": "^8.21.0",
@@ -15,6 +14,7 @@
     },
     "scripts": {
         "solhint": "solhint contracts/*.sol",
-        "prettier": "prettier --write contracts/*.sol"
+        "prettier": "prettier --write contracts/*.sol",
+        "eslint": "eslint . -c ./.eslintrc.json"
     }
 }
